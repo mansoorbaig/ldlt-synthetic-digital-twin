@@ -1,0 +1,3 @@
+def test_meld_range():
+    df = generate_dataset(1000)
+    assert df["meld"].between(6,40).all()
